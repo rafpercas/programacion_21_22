@@ -11,7 +11,7 @@ public class ej5_2_8 {
         int b = teclado.nextInt();
         System.out.println("Introduce el valor de 'c': ");
         int c = teclado.nextInt();
-        int cuadrado = Math.pow(b, 2);
-        int x = -b +-Math.sqrt(Math.pow(b, 2)-4*a*c)/(2*a);
+        double raiz = Math.pow (b,2);
+        double sol = raiz;
     }
 }
