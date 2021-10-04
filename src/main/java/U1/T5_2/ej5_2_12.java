@@ -1,7 +1,7 @@
 package U1.T5_2;
 
 import java.util.Scanner;
-
+// deberia hacerse con intercambiar valores creando una variable auxiliar
 public class ej5_2_12 {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
