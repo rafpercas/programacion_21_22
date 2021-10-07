@@ -18,7 +18,7 @@ public class ej5_2_24 {
       case "tijera":
         break;
       default:
-        System.out.println("Por favor introduzca una de las 3 opciones.");
+        System.out.println("Dato incorrecto.");
         break;
     }
     System.out.println("Jugador 2. Introduzca piedra, papel o tijera.");
@@ -58,7 +58,7 @@ public class ej5_2_24 {
         }
         break;
       default:
-        System.out.println("Por favor, introduzca una de las 3 opciones.");
+        System.out.println("Dato incorrecto.");
         break;
     }
   }
