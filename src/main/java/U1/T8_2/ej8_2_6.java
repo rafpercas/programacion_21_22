@@ -2,7 +2,7 @@ package U1.T8_2;
 
 import java.util.Scanner;
 
-public class ej8_piramidehueca {
+public class ej8_2_6 {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
     System.out.println("Introduzca la altura: ");

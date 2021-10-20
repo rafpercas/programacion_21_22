@@ -15,7 +15,7 @@ public class ej8_2_3 {
     int num = teclado.nextInt();
     int fibonacci = 0;
     int anterior = 1;
-    int penultimo;
+    int penultimo = 0;
     for (int i = 0; i < num; i++) {
       System.out.print(fibonacci + ", ");
       penultimo = fibonacci;
