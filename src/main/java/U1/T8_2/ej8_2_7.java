@@ -10,10 +10,12 @@ public class ej8_2_7 {
     int numero = teclado.nextInt();
     int resto = 0;
     int alReves = 0;
+    int multiplicador = 1;
     while (numero > 0) {
       resto = numero % 10;
-      System.out.print(resto);
+      alReves = alReves * 10 + resto;
       numero /= 10;
     }
+    System.out.println(alReves);
   }
 }
