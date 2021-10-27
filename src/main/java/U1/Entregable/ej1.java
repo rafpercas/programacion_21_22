@@ -1,7 +1,7 @@
 package U1.Entregable;
 
 import java.util.Scanner;
-
+// altura-1-i(para hacer el otro medio de la M)
 // Dibuja por pantalla la palabra MY (en mayúsculas) hechas de asteriscos separadas por 4 espacios.
 // La anchura y altura de cada una de las letras deberá ser la misma.
 // Se solicitará al usuario una altura que deberá siempre impar y mayor que 3.
