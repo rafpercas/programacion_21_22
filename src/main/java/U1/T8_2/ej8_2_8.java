@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class ej8_2_8 {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
-    int horasDia = 24;
+    final int horasDia = 24;
     int dia1;
     int dia2;
     int hora1;
