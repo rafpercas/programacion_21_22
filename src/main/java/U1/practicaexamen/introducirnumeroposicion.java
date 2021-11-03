@@ -20,7 +20,7 @@ public class introducirnumeroposicion {
 
     System.out.println("Introduce la posición donde quiera insertarlo: ");
     short posicion = teclado.nextShort();
-    int cantDigitos = 0;
+    int cantDigitos = 0;//cuenta cantidad de digitos del numero
     int posicion2;
     long num1 = num;
     int division=1;
@@ -28,15 +28,16 @@ public class introducirnumeroposicion {
     while(num>0){
       num=num/10;
       cantDigitos++;
-    }
-    posicion2 = cantDigitos-posicion;
+    }//cuenta el numero de digitos
+    posicion2 = cantDigitos-posicion;//donde se introducira el numero, contando de atras a alante
     for (int i = 0; i <= posicion2; i++) {
       division=division*10;
-    }
-    num2=num1%division;
-    num1=num1/division;
-    num1=num1*10+digito;
-    num=num1*division+num2;
+    }//la altura por la que se tiene que partir el numero para poder introducir el nuevo digito
+    num2=num1%division;//segunda parte del numero principal roto
+    num1=num1/division;//primera parte del numero principal roto
+    num1=num1*10+digito;//num1 ahora es la primera parte del numero con el nuevo digito introducido
+    num=num1*division+num2;//num1 * la cantidad de espacio detras que tiene que haber para poner la segunda parte
+    // + la segunda parte
     System.out.println("El numero sería: "+num);
   }
 }
