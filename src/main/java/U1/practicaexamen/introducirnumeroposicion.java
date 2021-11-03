@@ -3,48 +3,40 @@ package U1.practicaexamen;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
-
+//Escribe un programa que sea capaz de insertar un dígito dentro de un número
+//indicando la posición. El nuevo dígito se colocará en la posición indicada y el
+//resto de dígitos se desplazará hacia la derecha. Las posiciones se cuentan de
+//izquierda a derecha empezando por el 1. Suponemos que el usuario introduce
+//correctamente los datos. Se recomienda usar long en lugar de int ya que el
+//primero admite números más largos.
 public class introducirnumeroposicion {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
-    System.out.print("Introduzca un número entero: ");
-    int numeroIntroducido = teclado.nextInt();
+    System.out.println("Introduce un número entero: ");
+    long num = teclado.nextLong();
 
-    System.out.print("Introduzca un dígito: ");
-    int digito = teclado.nextInt();
+    System.out.println("Introduce un dígito: ");
+    short digito = teclado.nextShort();
 
-    System.out.print(
-        "Contando de izquierda a derecha, el "
-            + digito
-            + " aparece dentro de "
-            + numeroIntroducido
-            + " en las siguientes posiciones: ");
-
-    // le da la vueta al número y calcula la longitud
-    int numero = numeroIntroducido;
-    int volteado = 0;
-    int longitud = 0;
-    int posicion = 1;
-
-    if (numero == 0) {
-      longitud = 1;
+    System.out.println("Introduce la posición donde quiera insertarlo: ");
+    short posicion = teclado.nextShort();
+    int cantDigitos = 0;
+    int posicion2;
+    long num1 = num;
+    int division=1;
+    long num2;
+    while(num>0){
+      num=num/10;
+      cantDigitos++;
     }
-
-    while (numero > 0) {
-      volteado = (volteado * 10) + (numero % 10);
-      numero /= 10;
-      longitud++;
-    } // while
-
-    // comprueba la posición
-    while (volteado > 0) {
-      if ((volteado % 10) == digito) {
-        System.out.print(posicion + " ");
-      }
-      volteado /= 10;
-      posicion++;
-    } // while
-
-    System.out.println();
+    posicion2 = cantDigitos-posicion;
+    for (int i = 0; i <= posicion2; i++) {
+      division=division*10;
+    }
+    num2=num1%division;
+    num1=num1/division;
+    num1=num1*10+digito;
+    num=num1*division+num2;
+    System.out.println("El numero sería: "+num);
   }
 }
