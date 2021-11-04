@@ -12,15 +12,12 @@ public class flecha {
 
         }while(altura%2==0 || altura<3);
         for (int i = 0; i < altura; i++) {
-            for (int j = 0; j < altura; j++) {
-                if(j>altura/2-i && j>i-(altura/2) && j<altura/2||i==altura/2){
+            for (int j = 0; j <= altura+5; j++) {
+                if(j>altura/2-i && j>i-(altura/2) && j<=(altura/2)+1 || i==(altura/2) &&j>1&& j<altura+3){
                     System.out.print("*");
                 }else{
                     System.out.print(" ");
                 }
-            }
-            if(i==altura/2){
-                System.out.print("*");
             }
             System.out.println();
         }
