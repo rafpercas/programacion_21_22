@@ -1,4 +1,4 @@
-package U3;
+package U3.T1;
 
 import java.util.Scanner;
 

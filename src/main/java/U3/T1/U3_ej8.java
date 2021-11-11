@@ -1,4 +1,4 @@
-package U3;
+package U3.T1;
 // Actividad 8: Escribir una función a la que se le pase un número
 // entero y devuelva el número de divisores primos que tiene.
 import java.util.Scanner;

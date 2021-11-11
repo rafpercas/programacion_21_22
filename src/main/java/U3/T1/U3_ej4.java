@@ -1,4 +1,4 @@
-package U3;
+package U3.T1;
 // Actividad 4:
 // Diseñar una función que reciba como parámetros dos números enteros y que devuelva el mayor de los
 // dos.
