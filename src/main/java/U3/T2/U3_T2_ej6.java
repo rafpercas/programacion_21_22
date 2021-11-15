@@ -11,5 +11,16 @@ public class U3_T2_ej6 {
     Scanner teclado = new Scanner(System.in);
     System.out.println("Primer jugador.Introduce una contraseña: ");
     String j1 = teclado.next();
+    System.out.println(" Las pistas son: ");
+    System.out.println("El número de carácteres de la contraseña es de " + j1.length());
+    System.out.println(
+        "Empieza por " + j1.charAt(0) + " y termina por " + j1.charAt(j1.length() - 1));
+    System.out.println("Segundo jugador.Intenta adivinar la contraseña: ");
+    String j2 = teclado.next();
+    if (j1.equals(j2)) {
+      System.out.println("Acertaste!");
+    } else {
+      System.out.println("Fallaste!");
+    }
   }
 }

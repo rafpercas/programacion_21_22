@@ -17,13 +17,14 @@ public class U3_T2_ej5 {
     for (int i = 0; i < datos.length(); i++) {
       char caracter = datos.charAt(i);
       String carac = String.valueOf(caracter);
-      if () {}
+      // if () {}
     }
   }
 
-  static boolean esVocal(char a) {
+  static void esVocal(char a) {
     String vocales = "aáAÁeéEÉiíIÍoóOÓuúUÚ";
     boolean resultado;
-    if (vocales.indexOf(carac)) return resultado;
+    // if (vocales.indexOf(carac)) return resultado;
+
   }
 }
