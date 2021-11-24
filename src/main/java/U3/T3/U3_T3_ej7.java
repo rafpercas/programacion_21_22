@@ -17,6 +17,8 @@ public class U3_T3_ej7 {
     int notas[][] = new int[3][5];
     pedirNotas(notas);
     System.out.println(Arrays.deepToString(notas));
+    System.out.println(mediaGrupo(notas));
+    System.out.println(mediaAlumnos(notas));
   }
 
   static int[][] pedirNotas(int[][] a) {
@@ -29,5 +31,32 @@ public class U3_T3_ej7 {
       }
     }
     return a;
+  }
+
+  static double mediaGrupo(int[][] a) {
+    int suma = 0;
+    int count = 0;
+    double media = 0;
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[i].length; j++) {
+        suma = suma + a[i][j];
+        count += 1;
+      }
+      media = suma / count;
+    }
+    return media;
+  }
+
+  static double mediaAlumnos(int[][] a) {
+    Scanner teclado = new Scanner(System.in);
+    int suma = 0;
+    int count = 3;
+
+    System.out.println("Introduce el número del alumno que quiere saber la media: ");
+    int pos = teclado.nextInt();
+    suma = suma + a[0][pos - 1] + a[1][pos - 1] + a[2][pos - 1];
+
+    double mediaAlumno = suma / count;
+    return mediaAlumno;
   }
 }

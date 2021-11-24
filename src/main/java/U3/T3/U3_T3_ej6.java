@@ -20,17 +20,26 @@ public class U3_T3_ej6 {
       tabla1[i] = teclado.nextInt();
     }
     sinRepetidos(tabla1);
-    System.out.println(Arrays.toString(tabla1));
+    System.out.println(Arrays.toString(sinRepetidos(tabla1)));
   }
 
-  static int[] sinRepetidos(int a[]) {
-    for (int i = 0; i < a.length; i++) {
-      for (int j = 0; j < a.length; j++) {
-        if (a[i] == a[j]) {
-          (a[i]) = Integer.parseInt(null);
+  static int[] sinRepetidos(int t[]) {
+    int[] r = new int[0];
+    int ind_r = 0;
+    for (int i = 0; i < t.length; i++) {
+      boolean repetido = false;
+      for (int j = 0; j < r.length; j++) {
+        if (t[i] == r[j]) {
+          repetido = true;
+          break;
         }
       }
+      if (!repetido) {
+        r = Arrays.copyOf(r, r.length + 1);
+        r[ind_r] = t[i];
+        ind_r++;
+      }
     }
-    return a;
+    return r;
   }
 }
