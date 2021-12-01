@@ -57,8 +57,8 @@ public class U3_T4_ej3 {
           }
         }
       }
-      System.out.println(Arrays.toString(mesas));
-      System.out.println(Arrays.toString(ocupacion));
+      System.out.println("Mesa nº: " + Arrays.toString(mesas));
+      System.out.println("Clientes por mesa: " + Arrays.toString(ocupacion));
     } while (haySitio = true);
   }
 }
