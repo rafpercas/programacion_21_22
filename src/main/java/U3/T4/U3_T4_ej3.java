@@ -38,9 +38,20 @@ public class U3_T4_ej3 {
         clientes = teclado.nextInt();
         if (clientes > 4) {
           System.out.println(
-              "Lo siento, no admitimos grupos de 6, haga grupos de 4 personas como máximo e intente de nuevo");
+              "Lo siento, no admitimos grupos de"+clientes+" , haga grupos de 4 personas como máximo e intente de nuevo");
         }
       } while (clientes > 4);
+      if(clientes==-1){
+        break;
+      }
+      boolean yaSentado=false;
+      for (int i = 0; i < ocupacion.length; i++) {
+        if(ocupacion[i]==0){
+          ocupacion[i]=clientes;
+          yaSentado=true;
+          break;
+        }
+      }
 
       for (int i = 0; i < ocupacion.length; i++) {
 
@@ -55,6 +66,9 @@ public class U3_T4_ej3 {
             haySitio = false;
             System.out.println("No tenemos sitio.");
           }
+        }
+        if(!yaSentado){
+          System.out.println("Lo sentimos, no queda sitio.");
         }
       }
       System.out.println("Mesa nº: " + Arrays.toString(mesas));

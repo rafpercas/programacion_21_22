@@ -1,4 +1,7 @@
 package U3.T5;
+
+import java.util.Arrays;
+
 // Crea la función de manejo de arrays que tenga la siguiente cabecera y que haga
 // lo que se especifica en los comentarios:
 //
@@ -16,4 +19,38 @@ package U3.T5;
 // que contiene 7 en el array x, se devuelve un array con el número -1 como único
 // elemento.
 public class U3_T5_ej3 {
+  public static void main(String[] args) {
+    int[] array = {7, 10, 17, 20, 27, 30, 37};
+    System.out.println(Arrays.toString(filtraCon7(array)));
+    ;
+    System.out.println();
+  }
+
+  public static int[] filtraCon7(int[] x) {
+    boolean tiene7 = false;
+    int indiResultado = 0;
+    int[] resultado = new int[0];
+
+    for (int i = 0; i < x.length; i++) {
+      int aux = x[i];
+      int resto = 0;
+      while (aux >= 10) {
+        resto = aux % 10;
+        if (resto == 7) {
+          tiene7 = true;
+          resultado = Arrays.copyOf(resultado, resultado.length + 1);
+          resultado[indiResultado] = x[i];
+          indiResultado++;
+        }
+        aux = aux / 10;
+      }
+      if (aux == 7) {
+        tiene7 = true;
+        resultado = Arrays.copyOf(resultado, resultado.length + 1);
+        resultado[indiResultado] = x[i];
+        indiResultado++;
+      }
+    }
+    return resultado;
+  }
 }
