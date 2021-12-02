@@ -17,7 +17,9 @@ public class U3_T3_ej7 {
     int notas[][] = new int[3][5];
     pedirNotas(notas);
     System.out.println(Arrays.deepToString(notas));
-    System.out.println(mediaGrupo(notas));
+    for (int i = 0; i < notas.length; i++) {
+      System.out.println(mediaGrupo(notas,i));
+    }
     System.out.println(mediaAlumnos(notas));
   }
 
@@ -33,13 +35,13 @@ public class U3_T3_ej7 {
     return a;
   }
 
-  static double mediaGrupo(int[][] a) {
+  static double mediaGrupo(int[][] a,int trimestre) {
     int suma = 0;
     int count = 0;
     double media = 0;
-    for (int i = 0; i < a.length; i++) {
-      for (int j = 0; j < a[i].length; j++) {
-        suma = suma + a[i][j];
+    if(a.length>trimestre && trimestre >=0) {
+      for (int j = 0; j < a[trimestre].length; j++) {
+        suma = suma + a[trimestre][j];
         count += 1;
       }
       media = suma / count;

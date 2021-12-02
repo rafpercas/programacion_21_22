@@ -1,5 +1,7 @@
 package U1.T8;
-
+//Realizar un aplicación que genere un número aleatorio entre 1 y 100. El jugador debe ir probando números tratando de acertarlo.
+// El programa debe indicar "mayor" o "menor" según el número secreto sea mayor o menor que el introducido por el usuario.
+// El proceso finaliza cuando el usuario acierta o cuando se rinde (introduciendo un -1).
 import java.util.Scanner;
 
 public class ej8_3 {
@@ -25,7 +27,6 @@ public class ej8_3 {
                 break;
             }
         }while(num>=0 && num<=100);
-
-
+    int random = (int) (Math.random()*50+1);
     }
 }
