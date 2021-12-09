@@ -10,13 +10,14 @@ import java.util.Scanner;
 public class U3_T5_ej2 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int[][] array = new int[4][5];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.println("Introduzca un número para el array: ");
-                array[i][j] = teclado.nextInt();
-            }
-        }
+        int[][] array = {{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
+    //    int[][] array = new int[4][5];
+      //  for (int i = 0; i < array.length; i++) {
+        //    for (int j = 0; j < array[i].length; j++) {
+          //      System.out.println("Introduzca un número para el array: ");
+            //    array[i][j] = teclado.nextInt();
+            //}
+        //}
         System.out.println(Arrays.deepToString(array));
         int sumafila;
         for (int i = 0; i < array.length; i++) {
@@ -27,12 +28,13 @@ public class U3_T5_ej2 {
           System.out.println(sumafila);
         }
         int sumacolumna;
-        for (int i = 0; i < array[i].length; i++) {
+        for (int i = 0; i < 5; i++) {
             sumacolumna = 0;
             for (int j = 0; j < array.length; j++) {
                 sumacolumna += array[j][i];
             }
             System.out.println(sumacolumna);
         }
+
     }
 }

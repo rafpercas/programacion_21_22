@@ -18,18 +18,36 @@ public class U3_T4_ej2 {
                 "verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"
         };
         String[] arrayNew = new String[8];
+        String[] arraySin = new String[8];
+        int ind_arraySin = 0;
         int ind_arrayNew = 0;
         for (int i = 0; i < array.length; i++) {
             array[i] = teclado.next();
         }
         for (int i = 0; i < array.length; i++) {
+            boolean esta = true;
             for (int j = 0; j < colores.length; j++) {
                 if (array[i].equalsIgnoreCase(colores[j])) {
-                    arrayNew[ind_arrayNew] = array[i];
-                    ind_arrayNew++;
+                    esta = true;
+                    break;
+                }
+                if (!array[i].equalsIgnoreCase(colores[j])) {
+                    esta=false;
                 }
             }
+            if(esta){
+                arrayNew[ind_arrayNew] = array[i];
+                ind_arrayNew++;
+            }
+            if(!esta){
+                arraySin[ind_arraySin] = array[i];
+                ind_arraySin++;
+            }
         }
-      List<String> hola = new ArrayList<String>();
+        System.out.println(Arrays.toString(arrayNew));
+        System.out.println(Arrays.toString(arraySin));
+        String [] juntos = new String[8];
+        juntos = Arrays.copyOfRange(arrayNew,0,3);
+        System.out.println(Arrays.toString(juntos));
     }
 }
