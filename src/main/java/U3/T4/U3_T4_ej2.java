@@ -47,7 +47,7 @@ public class U3_T4_ej2 {
         System.out.println(Arrays.toString(arrayNew));
         System.out.println(Arrays.toString(arraySin));
         String [] juntos = new String[8];
-        juntos = Arrays.copyOfRange(arrayNew,0,3);
+        juntos = Arrays.copyOfRange(arrayNew,0,ind_arrayNew);
         System.out.println(Arrays.toString(juntos));
     }
 }
