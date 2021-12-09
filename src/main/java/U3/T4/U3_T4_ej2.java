@@ -46,8 +46,13 @@ public class U3_T4_ej2 {
         }
         System.out.println(Arrays.toString(arrayNew));
         System.out.println(Arrays.toString(arraySin));
+        int indarraySin =0;
         String [] juntos = new String[8];
         juntos = Arrays.copyOfRange(arrayNew,0,ind_arrayNew);
+        for (int i = 0; i < juntos.length; i++) {
+            juntos[i+ind_arrayNew]=arraySin[0];
+            indarraySin++;
+        }
         System.out.println(Arrays.toString(juntos));
     }
 }
