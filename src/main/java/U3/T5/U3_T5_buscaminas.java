@@ -35,6 +35,12 @@ public class U3_T5_buscaminas {
       for (int j = 0; j < matriz[i].length; j++) {
         matriz[i][j]=bomba[(int) (Math.random()*2)];
       }
+
+      System.out.println("Introduce la fila: ");
+      int fila = teclado.nextInt();
+      System.out.println("Introduce la columna: ");
+      int columna = teclado.nextInt();
+
       System.out.println(Arrays.toString(matriz[i]));
     }
   }
