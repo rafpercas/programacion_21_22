@@ -35,7 +35,6 @@ public class U3_T5_buscaminas {
       for (int j = 0; j < tablero[i].length; j++) {
         tablero[i][j]=bomba[(int) (Math.random()*2)];
       }
-<<<<<<< HEAD
 
       System.out.println("Introduce la fila: ");
       int fila = teclado.nextInt();
@@ -43,8 +42,7 @@ public class U3_T5_buscaminas {
       int columna = teclado.nextInt();
 
       System.out.println(Arrays.toString(matriz[i]));
-=======
->>>>>>> a75f0c84492f6ac26c3b46457871cf8365f8f864
+
     }
     for (String[] fila : tablero) {
       System.out.println(Arrays.toString(fila));
