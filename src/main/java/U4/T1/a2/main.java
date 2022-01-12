@@ -1,9 +1,9 @@
-package U4.T1;
+package U4.T1.a2;
 
 public class main {
   public static void main(String[] args) {
     CuentaCorriente c1 = new CuentaCorriente();
-    c1.crear("Rafael","30303030J");
+    c1.CuentaCorriente("Rafael","30303030J");
     c1.mostrarInfo();
     c1.ingresar(200);
     c1.mostrarInfo();
@@ -17,5 +17,8 @@ public class main {
     c1.mostrarInfo();
     c1.sacar(400);
     c1.mostrarInfo();
+    c1.CuentaCorriente("Manuel");
+
+
   }
 }
