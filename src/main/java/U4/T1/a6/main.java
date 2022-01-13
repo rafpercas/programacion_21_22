@@ -1,4 +1,4 @@
-package U4.T1.a5;
+package U4.T1.a6;
 
 public class main {
   public static void main(String[] args) {
@@ -41,5 +41,6 @@ public class main {
     t2.mostrarCadena();
     t2.contarVocales();
     t1.contarVocales();
+
   }
 }

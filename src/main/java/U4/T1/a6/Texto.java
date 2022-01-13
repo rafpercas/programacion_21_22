@@ -1,4 +1,4 @@
-package U4.T1.a5;
+package U4.T1.a6;
 // actividad 5
 public class Texto {
   public String cadena;
@@ -49,7 +49,7 @@ public class Texto {
 
   public void contarVocales() {
     int count = 0;
-    String vocales = "aeiou";
+    String vocales = "aeiouáéíóú";
     for (int i = 0; i < cadena.length(); i++) {
       for (int j = 0; j < vocales.length(); j++) {
         if (cadena.charAt(i) == vocales.charAt(j)) {
