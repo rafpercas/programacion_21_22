@@ -41,12 +41,14 @@ public class Hora {
   public Hora(int horaIntroducir, int cantidadSegundos) {
     setHora(horaIntroducir);
     setSumarSegundos(cantidadSegundos);
-    while (cantidadSegundos > 60) {
-      if (cantidadSegundos >= 60) {
+    while (cantidadSegundos >= 60) {
         setMinuto(getMinuto() + 1);
         cantidadSegundos -= 60;
         setSegundo(cantidadSegundos);
-      }
+        if(getMinuto()>=60){
+          setMinuto(0);
+          setHora(getHora()+1);
+        }
     }
   }
 

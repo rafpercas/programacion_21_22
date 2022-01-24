@@ -6,7 +6,7 @@ package U4.T1.a10;
 // set/get.
 public class main {
   public static void main(String[] args) {
-  Hora h1 = new Hora(16,700);
+  Hora h1 = new Hora(16,6670);
   h1.mostrarHora();
   }
 }
