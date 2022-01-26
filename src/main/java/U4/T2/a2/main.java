@@ -7,4 +7,8 @@ package U4.T2.a2;
 //
 // Implementar la clase PilaTabla para números Integer, donde se usa una tabla para guardar los
 // elementos apilados.
-public class main {}
+public class main {
+  public static void main(String[] args) {
+
+  }
+}
