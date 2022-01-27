@@ -8,7 +8,8 @@ package U4.T2.entregablePizzeria;
 // o familiar) y una lista de hasta 3 ingredientes (no más).
 //
 // En caso de no especificar el tamaño, todas las pizzas serán de tamaño familiar. Esta clase debe
-// tener un método de clase(STATIC) que nos muestre por pantalla todos los tamaños disponibles para la clase
+// tener un método de clase(STATIC) que nos muestre por pantalla todos los tamaños disponibles para
+// la clase
 // Pizza.
 //
 // De los Ingrediente únicamente nos interesa el nombre del mismo y el número de calorías cada 100
@@ -41,14 +42,13 @@ package U4.T2.entregablePizzeria;
 //    Podré mostrar la cantidad de pedidos que se han realizado.
 public class main {
   public static void main(String[] args) {
-pizza p1 = new pizza();
-ingrediente jamon = new ingrediente("jamon",100);
-ingrediente queso = new ingrediente();
-p1.addIngrediente(jamon);
-p1.addIngrediente(jamon);
-p1.addIngrediente(queso);
-p1.addIngrediente(jamon);
-p1.muestraInfoPizza();
 
+    // pizza p2 = new pizza();
+    // p2.addIngrediente(jamon);
+    // p2.muestraInfoPizza();
+    pizzeria rafafom = new pizzeria();
+    rafafom.addPedido(new pedido());
+    rafafom.muestraPedidos();
+    rafafom.muestraCantidadPedidos();
   }
 }

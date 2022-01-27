@@ -4,49 +4,68 @@ import java.util.Arrays;
 
 public class pizza {
 
-    public enum EnumSize{
-        mediana,
-        familiar
-    }
-    private EnumSize size;
-    private ingrediente[] ingredientes;
+  public enum EnumSize {
+    mediana,
+    familiar
+  }
 
+  private final int maxIngredientes = 3;
+  private EnumSize size;
+  private ingrediente[] ingredientes = new ingrediente[maxIngredientes];
+  private int contadorIngredientes = 0;
 
-public static void muestraSizePizza(){
-        for (EnumSize size: EnumSize.values() ) {
+  public static void muestraSizePizza() {
+    System.out.println("Tamaños: ");
+    for (EnumSize size : EnumSize.values()) {
       System.out.println(size);
-        }
-}
-    public pizza(){
-    this.size=EnumSize.familiar;
     }
-    public pizza(EnumSize sizePizza){
-    this.size=sizePizza;
-    }
-    public void muestraCantidadIngredientes(){
+  }
 
-    }
-    int indiceArray = 0;
-    public void addIngrediente(ingrediente ingredientePizza){
-    this.ingredientes = new ingrediente[indiceArray+1];
+  public pizza() {
+    this.size = EnumSize.familiar;
+  }
 
-        boolean quedaSitio = this.ingredientes.length < 3;
-        if (quedaSitio) {
-        this.ingredientes=Arrays.copyOf(this.ingredientes,indiceArray+1);
-        this.ingredientes[indiceArray]=ingredientePizza;
-      System.out.println("Ingrediente "+ingredientePizza.toString()+" añadido correctamente.");
-      indiceArray++;
-    } else if(this.ingredientes.length==3){
-            this.ingredientes[indiceArray]=ingredientePizza;
-            System.out.println("Ingrediente añadido correctamente.");
-            }else {
-      System.out.println("La pizza ya tiene el límite de ingredientes.");
-    }
-    }
+  public pizza(EnumSize sizePizza) {
+    this.size = sizePizza;
+  }
 
-    public void muestraInfoPizza(){
-    System.out.println("El tamaño de la pizza es: "+this.size);
-    System.out.println("Los ingredientes de la pizza son: "+ Arrays.toString(this.ingredientes));
-    }
+  public int cantidadIngredientes() {
+    return contadorIngredientes;
+  }
 
+  // int indiceArray = 0;
+
+  // public void addIngrediente(ingrediente ingredientePizza) {
+  // this.ingredientes = new ingrediente[indiceArray + 1];
+
+  // boolean quedaSitio = this.ingredientes.length < 3;
+  // if (quedaSitio) {
+
+  //   this.ingredientes[indiceArray] = ingredientePizza;
+  //    System.out.println("Ingrediente " + ingredientePizza.toString() + " añadido
+  // correctamente.");
+
+  //    indiceArray++;
+
+  // } else{
+  //   System.out.println("La pizza ya tiene el límite de ingredientes.");
+  //  }
+
+  // }
+  public boolean addIngrediente(ingrediente ingredientePizza) {
+    boolean quedaSitio = false;
+    if (contadorIngredientes < maxIngredientes) {
+      ingredientes[contadorIngredientes++] = ingredientePizza;
+      quedaSitio = true;
+    }
+    return quedaSitio;
+  }
+
+  public void muestraInfoPizza() {
+    System.out.println("El tamaño de la pizza es: " + this.size);
+    System.out.println("Ingredientes: ");
+    for (int i = 0; i < contadorIngredientes; i++) {
+      System.out.println("   - " + ingredientes[i].getNombre());
+    }
+  }
 }
