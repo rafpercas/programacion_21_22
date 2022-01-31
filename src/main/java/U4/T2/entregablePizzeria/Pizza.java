@@ -1,7 +1,5 @@
 package U4.T2.entregablePizzeria;
 
-import java.util.Arrays;
-
 public class Pizza {
 
     public enum EnumSize {
@@ -11,7 +9,7 @@ public class Pizza {
 
     public final int maxIngredientes = 3;
     private EnumSize size;
-    private ingrediente[] ingredientes = new ingrediente[maxIngredientes];
+    private Ingrediente[] ingredientes = new Ingrediente[maxIngredientes];
     private int contadorIngredientes = 0;
     public static final int maxIngredien = 5;
 
@@ -53,7 +51,7 @@ public class Pizza {
     //  }
 
     // }
-    public boolean addIngrediente(ingrediente ingredientePizza) {
+    public boolean addIngrediente(Ingrediente ingredientePizza) {
         boolean quedaSitio = false;
         if (contadorIngredientes < maxIngredientes) {
             ingredientes[contadorIngredientes++] = ingredientePizza;

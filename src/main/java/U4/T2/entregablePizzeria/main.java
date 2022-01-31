@@ -50,13 +50,14 @@ public class main {
         // pizza p2 = new pizza();
         // p2.addIngrediente(jamon);
         // p2.muestraInfoPizza();
-        pizzeria rafafom = new pizzeria();
-        rafafom.addPedido(new pedido());
+        Pizzeria rafafom = new Pizzeria();
+        rafafom.addPedido(new Pedido());
         rafafom.muestraPedidos();
         rafafom.muestraCantidadPedidos();
         Pizza p1 = new Pizza();
-        ingrediente jamon = new ingrediente();
+        Ingrediente jamon = new Ingrediente();
         p1.addIngrediente(jamon);
-
+        Pedido p4 = new Pedido();
+        p4.getFecha();
     }
 }

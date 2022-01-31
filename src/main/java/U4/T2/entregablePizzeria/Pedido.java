@@ -2,20 +2,20 @@ package U4.T2.entregablePizzeria;
 
 import java.util.Calendar;
 
-public class pedido {
+public class Pedido {
   private Pizza pizzaPedido;
   private String fechaPedido;
 
-  public pedido() {
+  public Pedido() {
     pizzaPedido = new Pizza(Pizza.EnumSize.familiar);
-    ingrediente i1 = new ingrediente("Jamón ibérico", 300);
-    ingrediente i2 = new ingrediente();
+    Ingrediente i1 = new Ingrediente("Jamón ibérico", 300);
+    Ingrediente i2 = new Ingrediente();
     pizzaPedido.addIngrediente(i1);
     pizzaPedido.addIngrediente(i2);
     this.fechaPedido = get_fecha_pedido();
   }
 
-  public pedido(Pizza p) {
+  public Pedido(Pizza p) {
     this.pizzaPedido = p;
     this.fechaPedido = get_fecha_pedido();
   }

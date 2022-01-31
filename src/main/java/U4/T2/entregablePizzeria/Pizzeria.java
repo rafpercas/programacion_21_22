@@ -2,22 +2,22 @@ package U4.T2.entregablePizzeria;
 
 import java.util.Arrays;
 
-public class pizzeria {
+public class Pizzeria {
   private int maxPedidos;
   private int contadorPedidos;
-  private pedido[] pedidos;
+  private Pedido[] pedidos;
 
-  public pizzeria() {
+  public Pizzeria() {
     maxPedidos = 5;
-    pedidos = new pedido[maxPedidos];
+    pedidos = new Pedido[maxPedidos];
   }
 
-  public pizzeria(int maxPedidosPizza) {
+  public Pizzeria(int maxPedidosPizza) {
     this.maxPedidos = maxPedidosPizza;
-    pedidos = new pedido[maxPedidos];
+    pedidos = new Pedido[maxPedidos];
   }
 
-  public void addPedido(pedido p) {
+  public void addPedido(Pedido p) {
     if (contadorPedidos < maxPedidos) {
       pedidos[contadorPedidos++] = p;
     } else {
