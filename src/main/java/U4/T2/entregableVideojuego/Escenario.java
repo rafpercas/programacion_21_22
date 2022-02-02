@@ -20,11 +20,14 @@ public class Escenario {
     this.tiposEnemigos = enemigosTipo;
   }
 
-  public void generarEnemigo(Enemigo.tipoEnemigo tipoEnemigo) {
-
+  public boolean generarEnemigo(Enemigo.tipoEnemigo tipoEnemigo) {
+      boolean quedaSitio = false;
     if (contadorEnemigos < maxEnemigos) {
       this.tiposEnemigos[contadorEnemigos++] = tipoEnemigo;
+        quedaSitio = true;
+
     }
+    return quedaSitio;
   }
 
   public void eliminarEnemigo(int posicion) {}

@@ -94,6 +94,7 @@ public class main {
     escenario1.generarEnemigo(Enemigo.tipoEnemigo.CrabMeat);
     escenario1.generarEnemigo(Enemigo.tipoEnemigo.CrabMeat);
 
+
     Videojuego v1 = new Videojuego(17.23f);
 
     v1.setIp(18.26f);
