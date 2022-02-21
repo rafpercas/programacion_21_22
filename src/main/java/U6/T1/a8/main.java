@@ -3,4 +3,7 @@ package U6.T1.a8;
 // personas (ambos ordenados). Realizar un programa que lea
 // ambos ficheros y que cree un tercer fichero  (todos.txt) con todos los nombres ordenados alfabéticamente.
 public class main {
+  public static void main(String[] args) {
+
+  }
 }

@@ -7,9 +7,12 @@ import java.io.IOException;
 // Diseñar un programa que procese el fichero y nos muestre el menor y el mayor.
 public class main {
   public static void main(String[] args) {
-    Integer min=0;
+    Integer min=10000000;
     Integer max=0;
     String texto = "";
+    System.out.println(min);
+    System.out.println(max);
+    Integer [] array = new Integer[1];
       try {
           FileReader in = new FileReader("numeros.txt");
           int c = in.read();
@@ -18,11 +21,11 @@ public class main {
               c = in.read();
           }
       for (int i = 0; i < texto.length(); i++) {
-        if(i<=min){
-            min=i;
+        if(texto.charAt(i)<=min){
+            min=(int) texto.charAt(i);
         }
-        if(i>=max){
-            max=i;
+        if(texto.charAt(i)>=max){
+            max=(int) texto.charAt(i);
         }
       }
       System.out.println(min);
