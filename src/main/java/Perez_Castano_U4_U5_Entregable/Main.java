@@ -25,6 +25,7 @@ public class Main {
     c1.add_multimedia(l1);
 
     c1.numero_de_elementos();
+    System.out.println(c1);
 
     //Doy por finalizados los objetos p1,s1 y l1
     p1.dar_por_finalizado();
@@ -48,5 +49,6 @@ public class Main {
     p1.play();
     p1.pause();
     p1.stop();
+    System.out.println(p1);
   }
 }

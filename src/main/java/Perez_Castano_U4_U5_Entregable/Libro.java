@@ -47,7 +47,12 @@ public class Libro extends Multimedia {
     System.out.println(this.titulo + " se ha marcado como finalizado.");
   }
 
+  @Override
   public String toString() {
-    return this.titulo;
+    return "Libro{" + super.toString()+
+            "editorial='" + editorial + '\'' +
+            ", ISBN='" + ISBN + '\'' +
+            ", paginas=" + paginas +
+            '}';
   }
 }

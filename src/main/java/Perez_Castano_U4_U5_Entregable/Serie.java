@@ -56,11 +56,16 @@ public class Serie extends Multimedia implements Reproducible {
     return eliminaCap;
   }
 
-  public String toString() {
-    return this.titulo;
-  }
+    @Override
+    public String toString() {
+        return "Serie{" + super.toString()+
+                "temporadas=" + temporadas +
+                ", capitulos=" + Arrays.toString(capitulos) +
+                ", indiceCap=" + indiceCap +
+                '}';
+    }
 
-  public void dar_por_finalizado() {
+    public void dar_por_finalizado() {
     System.out.println(this.titulo + " se ha marcado como finalizado.");
   }
 

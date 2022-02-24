@@ -32,10 +32,11 @@ public class Catalogo {
     System.out.println(cat.length);
   }
 
+  @Override
   public String toString() {
-    for (Multimedia multimedia : this.cat) {
-      return String.valueOf(multimedia);
-    }
-    return null;
+    return "Catalogo{" +
+            "cat=" + Arrays.toString(cat) +
+            ", indiceCat=" + indiceCat +
+            '}';
   }
 }

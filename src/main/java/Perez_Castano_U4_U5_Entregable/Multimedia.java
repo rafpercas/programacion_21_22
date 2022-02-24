@@ -43,4 +43,11 @@ public abstract class Multimedia {
   public static void setId(Integer id) {
     Multimedia.id = id;
   }
+
+    @Override
+    public String toString() {
+        return "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", estreno=" + estreno ;
+    }
 }
