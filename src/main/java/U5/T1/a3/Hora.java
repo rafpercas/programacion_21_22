@@ -36,4 +36,5 @@ public class Hora {
   public String toString(){
     return this.hora+":"+this.minuto;
   }
+
 }
