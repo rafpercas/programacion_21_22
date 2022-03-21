@@ -8,15 +8,15 @@ import java.util.*;
 public class Main {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
-    Collection<String> lista = new ArrayList<>();
-    String palabra ="";
-      while(!Objects.equals(palabra,"fin")){
-      System.out.println("Introduce una palabra, introduce 'fin' para salir: ");
+    LinkedHashSet<String> lista = new LinkedHashSet<>();
+    String palabra;
+    do {
+      System.out.println("Introduce una palabra, introduzca 'fin' para salir: ");
       palabra = teclado.next();
-      lista.add(palabra);
-    }
+      if (!palabra.equalsIgnoreCase("fin")) {
+        lista.add(palabra);}
+    } while (!palabra.equalsIgnoreCase("fin"));
     System.out.println(lista);
-      Set<String> s = new TreeSet<>(lista);
-    System.out.println(s);
-  }
+    }
 }
+
