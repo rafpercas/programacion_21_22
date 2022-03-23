@@ -14,7 +14,7 @@ public class main {
     System.out.println(max);
     Integer [] array = new Integer[1];
       try {
-          FileReader in = new FileReader("numeros.txt");
+          FileReader in = new FileReader("/programacion/programacion_21_22/numeros.txt");
           int c = in.read();
           while (c != -1) {
               texto += (char) c;

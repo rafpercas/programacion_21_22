@@ -10,7 +10,7 @@ public class main {
   public static void main(String[] args) {
     StringBuilder texto = new StringBuilder();
     try {
-      BufferedReader in = new BufferedReader(new FileReader("/programacion_21_22/more.txt"));
+      BufferedReader in = new BufferedReader(new FileReader("more.txt"));
       String linea = in.readLine();
       while (linea != null) {
         texto.append(linea).append("\n");
