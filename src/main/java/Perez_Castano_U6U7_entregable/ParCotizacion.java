@@ -1,10 +1,25 @@
 package Perez_Castano_U6U7_entregable;
 
+import java.util.Objects;
+
 public class ParCotizacion {
   private Divisa base;
   private Divisa destino;
   private Double precioEntreDivisas;
   private Double variacion;
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ParCotizacion that = (ParCotizacion) o;
+    return Objects.equals(base, that.base) && Objects.equals(destino, that.destino) && Objects.equals(precioEntreDivisas, that.precioEntreDivisas) && Objects.equals(variacion, that.variacion);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(base, destino, precioEntreDivisas, variacion);
+  }
 
   public ParCotizacion(Divisa base, Divisa destino, Double precioEntreDivisas, Double variacion) {
     this.base = base;

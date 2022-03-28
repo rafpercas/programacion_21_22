@@ -1,16 +1,33 @@
 package Perez_Castano_U6U7_entregable;
 
-public abstract class Divisa {
+import java.util.Objects;
+
+public abstract class Divisa //implements Comparable
+{
   private String nombre;
   private String simbolo;
   private static Integer id = 0;
   private Integer aumentoId;
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Divisa divisa = (Divisa) o;
+    return Objects.equals(simbolo, divisa.simbolo) && Objects.equals(aumentoId, divisa.aumentoId);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(simbolo, aumentoId);
+  }
 
   public Divisa(String nombre, String simbolo) {
     this.nombre = nombre;
     this.simbolo = simbolo;
     id++;
     setAumentoId(id);
+    //this.aumentoId = id++;
   }
 
   public String getNombre() {
@@ -49,4 +66,5 @@ public abstract class Divisa {
   public String toString() {
     return "Divisa{" + "nombre='" + nombre + '\'' + ", simbolo='" + simbolo + '\'' + '}';
   }
+
 }
