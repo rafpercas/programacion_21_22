@@ -65,7 +65,7 @@ public class Exchange implements Serializable{
 
     public void guardarCotizaciones() {
         try (ObjectOutputStream flujo_salida =
-                     new ObjectOutputStream(new FileOutputStream("programacion_21_22/src/main/java/entregable67corregido/cotizaciones.dat"))) {
+                     new ObjectOutputStream(new FileOutputStream("Desktop/programacion/programacion_21_22/src/main/java/entregable67corregido/cotizaciones.dat"))) {
             flujo_salida.writeObject(this.mapaCotizaciones);
         } catch (IOException e) {
             System.out.println("¡Error al escribir el fichero!");
@@ -74,7 +74,7 @@ public class Exchange implements Serializable{
 
     public void recuperarCotizaciones() {
         try (ObjectInputStream flujo_entrada =
-                     new ObjectInputStream(new FileInputStream("programacion_21_22/src/main/java/entregable67corregido/cotizaciones.dat"))) {
+                     new ObjectInputStream(new FileInputStream("Desktop/programacion/programacion_21_22/src/main/java/entregable67corregido/cotizaciones.dat"))) {
             this.mapaCotizaciones = (HashMap<Divisa, LinkedHashSet<ParCotizacion>>) flujo_entrada.readObject();
         } catch (IOException e) {
             System.out.println("¡Error al leer el fichero!");
