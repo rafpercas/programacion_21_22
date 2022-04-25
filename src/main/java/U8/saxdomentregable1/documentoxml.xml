@@ -1,0 +1,27 @@
+<personas info="personas" otro="ejemplo">
+    <persona id="1">
+        <nombre>Pepe</nombre>
+        <edad>14</edad>
+        <nose>1</nose>
+    </persona>
+    <persona id="2">
+        <nombre>María</nombre>
+        <edad>51</edad>
+        <nose>2</nose>
+    </persona>
+    <persona id="3">
+        <nombre>Raul</nombre>
+        <edad>22</edad>
+        <nose>3</nose>
+    </persona>
+    <persona id="4">
+        <nombre>Rafa</nombre>
+        <edad>22</edad>
+        <nose>4</nose>
+    </persona>
+    <persona id="5">
+        <nombre>Crosu</nombre>
+        <edad>22</edad>
+        <nose>5</nose>
+    </persona>
+</personas>
