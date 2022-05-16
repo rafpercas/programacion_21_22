@@ -32,7 +32,7 @@ public class personaSax extends DefaultHandler {
   // Handler para el evento etiqueta de apertura
   @Override
   public void startElement(String uri, String localName, String qName, Attributes attributes)
-      throws SAXException {
+          throws SAXException {
     super.startElement(uri, localName, qName, attributes);
 
     if (qName.equals("persona")) {
@@ -60,4 +60,4 @@ public class personaSax extends DefaultHandler {
     super.characters(ch, start, length);
     contenido_nodo_texto = new String(ch, start, length);
   }
-    }
+}
