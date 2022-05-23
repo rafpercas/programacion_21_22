@@ -125,6 +125,5 @@ public class Transacciones {
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
-
     }
 }
