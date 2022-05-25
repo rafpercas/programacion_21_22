@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banco>
+    <cuenta cc="111111111">
+        <cliente>
+            <nombre>Pepe</nombre>
+            <apellidos>Perez</apellidos>
+        </cliente>
+        <saldo>10000</saldo>
+    </cuenta>
+    <cuenta cc="2222222222">
+        <cliente>
+            <nombre>Lola</nombre>
+            <apellidos>Lopez</apellidos>
+        </cliente>
+        <saldo>50000</saldo>
+    </cuenta>
+    <cuenta cc="33333333">
+        <cliente>
+            <nombre>Juan</nombre>
+            <apellidos>Perez</apellidos>
+        </cliente>
+        <saldo>1000000</saldo>
+    </cuenta>
+</banco>

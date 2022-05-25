@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+        
+    <!--Empieza la lista de personas-->
+    <persona id="5">
+        <nombre>Chema Durán</nombre>
+        <edad>50</edad>
+    </persona>
+        
+    
+    <persona id="3">
+                
+        <nombre>Raul</nombre>
+                
+        <edad>22</edad>
+            
+    </persona>
+    
+    <persona id="4">
+        <nombre>Chema Durán</nombre>
+        <edad>50</edad>
+    </persona>
+</personas>
