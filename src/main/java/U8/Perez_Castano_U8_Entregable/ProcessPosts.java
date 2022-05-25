@@ -1,6 +1,6 @@
 package U8.Perez_Castano_U8_Entregable;
 
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 import org.w3c.dom.*;
 import org.w3c.dom.Comment;
 import org.xml.sax.SAXException;
@@ -166,13 +166,13 @@ public class ProcessPosts {
   }
 
   public void convertToJSON() {
-    Gson gson = new Gson();
-    String json_completo = gson.toJson(getPosts());
+    //Gson gson = new Gson();
+    //String json_completo = gson.toJson(getPosts());
     try {
       BufferedWriter out =
           new BufferedWriter(
               new FileWriter("src/main/java/U8/Perez_Castano_U8_Entregable/posts.json", true));
-      out.write(json_completo);
+      //out.write(json_completo);
       out.close();
     } catch (IOException ex) {
       System.out.println("Error con el archivo.");

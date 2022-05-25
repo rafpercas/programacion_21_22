@@ -12,7 +12,7 @@ public class CargarArrayList {
     public static void main(String[] args) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = null;
-        List<Persona> personas = new ArrayList<>();
+      //  List<Persona> personas = new ArrayList<>();
 
         try {
             db = dbf.newDocumentBuilder();
@@ -52,7 +52,7 @@ public class CargarArrayList {
                     }
                 }
 
-                personas.add(new Persona(id,nombre,edad));
+       //         personas.add(new Persona(id,nombre,edad));
 
             }
 
@@ -60,6 +60,6 @@ public class CargarArrayList {
             throw new RuntimeException(e);
         }
 
-        System.out.println(personas);
+     //   System.out.println(personas);
     }
 }

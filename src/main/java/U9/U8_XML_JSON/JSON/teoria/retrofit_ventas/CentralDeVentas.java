@@ -1,5 +1,6 @@
 package U9.U8_XML_JSON.JSON.teoria.retrofit_ventas;
 
+/*
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -20,3 +21,4 @@ public interface CentralDeVentas {
     @GET("json_api_demo/ventas/{venta_id}/detalles")
     Call<List<DetalleVenta>> listVentaIdDetalles(@Path("venta_id") Integer venta_id);
 }
+*/

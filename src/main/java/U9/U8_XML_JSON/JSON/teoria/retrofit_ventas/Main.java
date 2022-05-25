@@ -1,4 +1,4 @@
-package U9.U8_XML_JSON.JSON.teoria.retrofit_ventas;
+/*package U9.U8_XML_JSON.JSON.teoria.retrofit_ventas;
 
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -14,35 +14,35 @@ public class Main {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {*/
 
-        Retrofit retrofit = new Retrofit.Builder().
-                baseUrl("https://my-json-server.typicode.com/pekechis/").
-                addConverterFactory(GsonConverterFactory.create())
-                .build();
+      //  Retrofit retrofit = new Retrofit.Builder().
+        //        baseUrl("https://my-json-server.typicode.com/pekechis/").
+          //      addConverterFactory(GsonConverterFactory.create())
+            //    .build();
 
-        CentralDeVentas service = retrofit.create(CentralDeVentas.class);
+     //   CentralDeVentas service = retrofit.create(CentralDeVentas.class);
 
-        Venta venta = null;
+/*        Venta venta = null;
         final Integer ventaId =2;
 
         System.out.println("Obtenemos el listado completo de ventas");
-        try {
-            Response<List<Venta>> response = service.listVentas().execute();
-
-            if (response.isSuccessful()) {
-                List<Venta> ventas = response.body();
-                System.out.println(ventas);
-            } else {
-                System.out.println("Petición no válida: "+response.message());
-            }
-        } catch (IOException e) {
-            System.out.println("Error en la petición: "+e.getMessage());
-        }
+        try {*/
+      //      Response<List<Venta>> response = service.listVentas().execute();
+//
+    //        if (response.isSuccessful()) {
+       //         List<Venta> ventas = response.body();
+      //          System.out.println(ventas);
+      //      } else {
+      //          System.out.println("Petición no válida: "+response.message());
+         //   }
+    //    } catch (IOException e) {
+     //       System.out.println("Error en la petición: "+e.getMessage());
+  //      }
 
         //Obtenemos una venta concreta identificada por ID
-        System.out.println("Obtenemos una venta concreta identcada por ID: "+ventaId);
-        try {
+      //  System.out.println("Obtenemos una venta concreta identcada por ID: "+ventaId);
+     /*   try {
             Response<Venta> response = service.getVentaId(ventaId).execute();
 
             if (response.isSuccessful()) {
@@ -76,10 +76,10 @@ public class Main {
 
         System.out.println();
         System.out.println("Imprimimos el objeto venta");
-        System.out.println(venta);
+        System.out.println(venta);*/
 
 
-    }
+ /*   }
 
 
-}
+}*/
