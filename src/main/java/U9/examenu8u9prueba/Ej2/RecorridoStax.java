@@ -19,7 +19,7 @@ public class RecorridoStax {
 
       XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
       XMLEventReader xmlReader =
-          xmlInputFactory.createXMLEventReader(new FileInputStream("XMLs/biblioteca.xml"));
+          xmlInputFactory.createXMLEventReader(new FileInputStream("programacion_21_22/src/main/java/U9/examenu8u9prueba/Ej2/ejercicio.xml"));
 
       String lmpTitulo = "";
       String lmpAutor = "";
@@ -110,7 +110,7 @@ public class RecorridoStax {
 
       XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
       XMLEventReader xmlReader =
-          xmlInputFactory.createXMLEventReader(new FileInputStream("XMLs/biblioteca.xml"));
+          xmlInputFactory.createXMLEventReader(new FileInputStream("programacion_21_22/src/main/java/U9/examenu8u9prueba/Ej2/ejercicio.xml"));
 
       while (xmlReader.hasNext()) {
         XMLEvent xmlEvent = xmlReader.nextEvent();

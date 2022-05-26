@@ -24,7 +24,7 @@ public class ModificacionDOM {
     try {
       DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
       DocumentBuilder db = dbf.newDocumentBuilder();
-      doc = db.parse(new File("XMLs/biblioteca.xml"));
+      doc = db.parse(new File(""));
 
     } catch (ParserConfigurationException | SAXException | IOException e) {
       System.out.println(e.getMessage());
@@ -122,7 +122,7 @@ public class ModificacionDOM {
 
       DOMSource origenDOM = new DOMSource(doc);
 
-      File ejercicio2 = new File("XMLs/ejercicio2.xml");
+      File ejercicio2 = new File("ejercicio2.xml");
       StreamResult destino = new StreamResult(ejercicio2);
 
       transformer.transform(origenDOM, destino);

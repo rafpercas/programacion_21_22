@@ -1,6 +1,6 @@
 package U9.examenu8u9prueba.Ej4;
 
-import U9.U9_Entregable.ConexionBD;
+import U9.examenu8u9prueba.Ej3.ConexionBD;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -7,7 +7,7 @@ public class Ej2 {
 
     System.out.println();
 
-    RecorridoStax.mostrarNumLibrosEditorial("Anaya");
-    RecorridoStax.mostrarNumLibrosEditorial("Planeta");
+    RecorridoStax.mostrarNumLibrosEditorial("anagrama");
+    RecorridoStax.mostrarNumLibrosEditorial("rafaelo");
   }
 }
