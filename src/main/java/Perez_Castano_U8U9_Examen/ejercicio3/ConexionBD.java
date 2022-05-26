@@ -1,4 +1,4 @@
-package U9.examenu8u9prueba.Ej3;
+package Perez_Castano_U8U9_Examen.ejercicio3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,13 +10,13 @@ public class ConexionBD {
   public static Connection getConnection() {
     try {
       if (con == null) {
-        String driver = "com.mysql.jdbc.Driver";
+        String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:8093/classicmodels?autoReconnect=true";
         String pwd = "programacion";
         String usr = "programacion";
         Class.forName(driver);
         con = DriverManager.getConnection(url, usr, pwd);
-        System.out.println("Connection Succesfull");
+        System.out.println("Conexión exitosa");
       }
     } catch (ClassNotFoundException | SQLException ex) {
       ex.printStackTrace();
